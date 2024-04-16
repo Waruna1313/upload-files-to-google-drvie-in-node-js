@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=bkaQTLCBBeo
+https://protocoderspoint.com/nodejs-script-to-upload-file-to-google-drive-using-googleapis/ me tyenne blog eka. eke email eka google drive ekata add karaddi console eken copy karala add karann oni. ekawara email wala eeka penwaanne nh
 this video has how to do it correctly
 mehema upload karaddi apita upload karana file eka publicly visible wenna oninm pahala function eka wenas karanna wenwa 
 
