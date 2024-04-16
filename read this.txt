@@ -1,2 +1,53 @@
 https://www.youtube.com/watch?v=bkaQTLCBBeo
 this video has how to do it correctly
+mehema upload karaddi apita upload karana file eka publicly visible wenna oninm pahala function eka wenas karanna wenwa 
+
+async function uploadFile(authClient){
+    ...
+            fields:'id'
+        },function(error,file){
+            if(error){
+                return rejected(error)
+            }
+            resolve(file);
+        })
+    });
+}  
+
+kalin thibbe uda widihta 
+
+dan oni yata widihata 
+async function uploadFile(authClient){
+    ...
+            fields:'id'
+        },function(error,file){
+            if(error){
+                return rejected(error)
+            }
+            
+            // Set the file's permissions to be visible to anyone with the link
+            drive.permissions.create(
+                {
+                    fileId: file.id,
+                    requestBody: {
+                        role: 'reader',
+                        type: 'anyone',
+                    },
+                },
+                function (permissionError) {
+                    if (permissionError) {
+                         return reject(permissionError);
+                    }
+                    resolve(file);
+                }
+            );
+
+        })
+    });
+}
+
+
+
+
+https://www.youtube.com/watch?v=iajv8y-6n3Q
+how to view
